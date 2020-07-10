@@ -12,3 +12,8 @@ Testing some interesting concepts of functional programming in python
 
  - Instead of loops use states called recursively
  - All data changes are done with return values
+
+
+# References
+[An introduction to functional programming
+Mary Rose Cook](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
