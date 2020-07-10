@@ -13,6 +13,8 @@
  1. No shared variables (global)
  2. Functions take parameters
  3. No variables instantiated inside functions
+ 4. No variables store states: states are passed through return values
+ 5. Original variables do not change (no mutation)
 
  - Instead of loops use states called recursively
  - All data changes are done with return values
