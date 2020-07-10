@@ -7,6 +7,20 @@ def one(s):
     if s[0] == "1":
         return s[1:]
 
+
+############### IMPERATIVE-STYLE CODE ###############
+
+# def rule_sequence(s, rules):
+#     for rule in rules:
+#         s = rule(s)
+#         if s == None:
+#             break
+
+#     return s
+
+#####################################################
+
+
 def print_state(string, rules):
     print({ 'string' : string, 'rules' : rules})
 
