@@ -1,5 +1,9 @@
 # Introduction
-Testing some interesting concepts of functional programming in python
+ - Testing some interesting concepts of functional programming in python
+ - Functional Programming do 3 things to your code:
+    1. It gets easier to test
+    2. It gets easier to reuse
+    3. It gets easier to parallelize
 
 # Key concepts
  - Describe WHAT to do = Functional
