@@ -52,10 +52,8 @@ bands = [{'name': 'sunset rubdown', 'country': 'UK', 'active': False},
          {'name': 'women', 'country': 'Germany', 'active': False},
          {'name': 'a silver mt. zion', 'country': 'Spain', 'active': True}]
 
-test_function(set_canada_as_country)
-test_function(strip_punctuation_from_name)
-test_function(capitalize_names)
+# test_function(set_canada_as_country)
+# test_function(strip_punctuation_from_name)
+# test_function(capitalize_names)
 
-# print(pipeline_each(bands, [set_canada_as_country,
-#                             strip_punctuation_from_name,
-#                             capitalize_names]))
+print(pipeline_each(bands, [set_canada_as_country,strip_punctuation_from_name,capitalize_names]))
