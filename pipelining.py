@@ -20,10 +20,11 @@
 ###############################################################################
 
 def pipeline_each(bands,operations):
-    if len(operations) >= 1:
-        pipeline_each(map(operations[0],bands),operations[1:])
+    if len(operations)>=1:
+        return pipeline_each(list(map(operations[0],bands)),operations[1:])
     else:
         return bands
+
 
 def assoc(_d, key, value):
     from copy import deepcopy
@@ -52,8 +53,8 @@ bands = [{'name': 'sunset rubdown', 'country': 'UK', 'active': False},
          {'name': 'women', 'country': 'Germany', 'active': False},
          {'name': 'a silver mt. zion', 'country': 'Spain', 'active': True}]
 
-# test_function(set_canada_as_country)
-# test_function(strip_punctuation_from_name)
-# test_function(capitalize_names)
+test_function(set_canada_as_country)
+test_function(strip_punctuation_from_name)
+test_function(capitalize_names)
 
 print(pipeline_each(bands, [set_canada_as_country,strip_punctuation_from_name,capitalize_names]))
