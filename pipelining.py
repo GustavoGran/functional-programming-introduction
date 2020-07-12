@@ -25,17 +25,22 @@ def pipeline_each(bands,operations):
     else:
         return bands
 
+def assoc(_d, key, value):
+    from copy import deepcopy
+    d = deepcopy(_d)
+    d[key] = value
+    return d
+
 def set_canada_as_country(band):
-    band['country'] = 'Canada'
-    return band
+    return assoc(band,'country','Canada')
 
 def strip_punctuation_from_name(band):
-    band['name'] = band['name'].replace('.','')
-    return band
+    # strings are immutable in python, no problem with .replace()
+    return assoc(band,'name', band['name'].replace('.','')) 
 
 def capitalize_names(band):
-    band['name'] = band['name'].title()
-    return band
+    # strings are immutable in python, no problem with .title()
+    return assoc(band,'name',band['name'].title())
 
 def test_function(operation):
     band = {'name': 'a silver mt. zion', 'country': 'Spain'}
